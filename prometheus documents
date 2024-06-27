@@ -1,0 +1,11 @@
+prometheus important commands 
+
+sudo nano /etc/prometheus/prometheus.yml     this helps to configure the file to scare the data where we want like API's
+
+sudo nano /etc/systemd/system/prometheus.service     	this helps to control the prometheus service file all about prometheus
+
+sudo systemctl daemon-reload
+sudo systemctl enable prometheus
+sudo systemctl start prometheus
+sudo systemctl status prometheus
+
