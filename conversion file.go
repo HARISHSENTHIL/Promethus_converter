@@ -12,7 +12,7 @@ import (
 )
 
 var (
-	jsonEndpoint = "http://" + os.Getenv("METRIC_WEB_ADDR") + "/debug/vars"
+	jsonEndpoint = "http://" + os.Getenv("METRIC_WEB_ADDR") + "/debug"
 	metrics      = make(map[string]prometheus.Collector)
 )
 
