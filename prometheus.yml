@@ -15,44 +15,18 @@ rule_files:
 
 # Scrape configurations
 scrape_configs:
-  - job_name: block_producer_2
-    metrics_path: /metrics
-    # metrics_path defaults to '/metrics'
-    # scheme defaults to 'http'.
-    static_configs:
-      - targets: ["localhost:12101"]
-
-  - job_name: block_producer_0
-    metrics_path: /metrics
-    # metrics_path defaults to '/metrics'
-    # scheme defaults to 'http'.
-    static_configs:
-      - targets: ["localhost:12099"]
-
-  - job_name: block_producer_1
+  - job_name: block_producer
     metrics_path: /metrics
     # metrics_path defaults to '/metrics'
     # scheme defaults to 'http'.
     static_configs:
       - targets: ["localhost:12100"]
 
-  - job_name: node_miner_0
+  - job_name: block_producer  # what ever name it can be have.
     metrics_path: /metrics
     # metrics_path defaults to '/metrics'
     # scheme defaults to 'http'.
     static_configs:
-      - targets: ["localhost:12102"]
+      - targets: ["localhost:12090"]
 
-  - job_name: node_miner_1
-    metrics_path: /metrics
-    # metrics_path defaults to '/metrics'
-    # scheme defaults to 'http'.
-    static_configs:
-      - targets: ["localhost:12103"]
-
-  - job_name: node_miner_2
-    metrics_path: /metrics
-    # metrics_path defaults to '/metrics'
-    # scheme defaults to 'http'.
-    static_configs:
-      - targets: ["localhost:12104"]
+ 
