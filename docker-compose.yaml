@@ -1,0 +1,17 @@
+# version: '3'
+# services:
+#   prometheus:
+#     image: prom/prometheus
+#     volumes:
+#       - "./prometheus.yml:/etc/prometheus/prometheus.yml"
+#     networks:
+#       - localprom
+#     ports:
+#       - 9090:9090
+
+# networks:
+#   localprom:
+#     driver: bridge
+
+# curl 'http://localhost:9090/api/v1/query_range?query=mem_avail&start=1718952124&end=1718980944&step=300'  memory utilization for last 8 hours
+
